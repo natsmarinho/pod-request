@@ -1,0 +1,6 @@
+@import url("../css/reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Chivo&display=swap');
+
+body {
+    font-family: 'Chivo', sans-serif;
+}
