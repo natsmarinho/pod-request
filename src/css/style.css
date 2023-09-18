@@ -1,12 +1,90 @@
 @import url("../css/reset.css");
 @import url('https://fonts.googleapis.com/css2?family=Chivo&display=swap');
 
+:root {
+    --verde: #54E6AF;
+    --branco: #fff;
+    --cinza: #C2CBE5;
+    --azul-escuro: #2C344B;
+}
+
 body {
     font-family: 'Chivo', sans-serif;
 }
 
 .fundo {
     width: 100%;
-    filter: opacity(.5) drop-shadow(0 0 0 #54E6AF);
-    opacity: .4;
+    filter: opacity(1) drop-shadow(0 0 0 var(--verde)) brightness(15%);
+    position: absolute;
+}
+
+header {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transform: translate(-50%, -50%);
+    top: 5.5rem; 
+    left: 50%; 
+}
+
+.container {
+    position: absolute;
+    bottom: 40%;
+}
+
+.container-title {
+    font-size: 1.625rem;
+    text-transform: uppercase;
+    line-height: 2.375rem;
+    text-align: center;
+    color: var(--verde);
+}
+
+.container-title span {
+    color: var(--branco);
+}
+
+.container-text {
+    color: var(--cinza);
+    font-size: 0.9375rem;
+    text-align: center;
+    line-height: 1.5625rem;
+    padding-top: 1rem;
+}
+
+.podcast-plataform-list {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding-top: 2.25rem;
+}
+
+.container-request {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+    padding-top: 3rem;
+    gap: 1rem;
+}
+
+#email {
+    padding: .8rem;
+    border-radius: 1.75rem;
+    background: var(--azul-escuro);
+    border: none;
+}
+
+#email::placeholder {
+    color: var(--cinza);
+    padding-left: 2rem;
+}
+
+#request {
+    padding: .8rem;
+    border-radius: 1.75rem;
+    border: none;
+    background: var(--verde);
+    font-weight: bolder;
 }
