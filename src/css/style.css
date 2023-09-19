@@ -10,11 +10,12 @@
 
 body {
     font-family: 'Chivo', sans-serif;
+    overflow-x: hidden;
 }
 
 .fundo {
-    width: 100%;
-    filter: opacity(1) drop-shadow(0 0 0 var(--verde)) brightness(15%);
+    width: 147.5%;
+    filter: drop-shadow(0 0 0 var(--verde)) brightness(15%);
     position: absolute;
 }
 
@@ -30,7 +31,8 @@ header {
 
 .container {
     position: absolute;
-    bottom: 40%;
+    bottom: 30%;
+    padding-inline: 2rem;
 }
 
 .container-title {
@@ -78,7 +80,7 @@ header {
 
 #email::placeholder {
     color: var(--cinza);
-    padding-left: 2rem;
+    padding-left: 1rem;
 }
 
 #request {
@@ -87,4 +89,29 @@ header {
     border: none;
     background: var(--verde);
     font-weight: bolder;
+}
+
+@media screen and (min-width: 762px) {
+    .img-box {
+        width: 60%;
+        height: 60%;
+        position: absolute;
+        display: inline-block;
+        right: -rem;
+    }
+    .fundo {
+        width: 85%;
+        filter: brightness(100%);
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 85%;
+        height: 100%;
+        background: var(--verde);
+        opacity: 0.5;
+        z-index: 1;
+        }
 }
