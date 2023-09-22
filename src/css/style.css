@@ -19,6 +19,10 @@ body {
     position: absolute;
 }
 
+.fundo-desktop {
+    display: none;
+}
+
 header {
     position: absolute;
     display: flex;
@@ -99,6 +103,7 @@ header {
     body {
         background: var(--fundo-azul-escuro);
     }
+
     .img-box {
         width: 60%;
         height: 60%;
@@ -110,6 +115,10 @@ header {
     .fundo {
         width: 85%;
         filter: brightness(100%);
+    }
+
+    .fundo-desktop {
+        display: none;
     }
 
     header {
@@ -171,4 +180,39 @@ header {
         left: 2rem;
         display: block;
     }
+}
+
+@media screen and (min-width: 1024px) {
+    .request-btn {
+        right: 5.8rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .img-box {
+        margin-top: 2rem;
+    }
+    .fundo {
+        display: none;
+    }
+
+    .logo-desktop {
+        width: 90%;
+    }
+    
+    .overlay {
+        width: 100%;
+        height: 140%;
+    }
+
+    .container {
+        width: 60%;
+        bottom: 10%;
+    }
+
+    .elements-styling {
+        left: 80%;
+        bottom: 3%;
+    } 
 }
