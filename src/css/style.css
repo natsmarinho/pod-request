@@ -6,6 +6,7 @@
     --cinza: #C2CBE5;
     --azul-escuro: #2C344B;
     --fundo-azul-escuro: #121725;
+    --vermelho: #FB3E3E;
 }
 
 body {
@@ -96,6 +97,13 @@ header {
 }
 
 .elements-styling {
+    display: none;
+}
+
+.error-span {
+    color: var(--vermelho);
+    font-size: 0.75rem;
+    padding-left: 2rem;
     display: none;
 }
 
