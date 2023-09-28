@@ -7,6 +7,7 @@
     --azul-escuro: #2C344B;
     --fundo-azul-escuro: #121725;
     --vermelho: #FB3E3E;
+    --verde-hover: #B3FFE2;
 }
 
 body {
@@ -81,11 +82,12 @@ header {
     border-radius: 1.75rem;
     background: var(--azul-escuro);
     border: none;
+    color: var(--branco);
 }
 
 #email::placeholder {
-    color: var(--cinza);
     padding-left: 1rem;
+    color: var(--branco);
 }
 
 #request {
@@ -96,14 +98,28 @@ header {
     font-weight: bolder;
 }
 
+#request:hover {
+    background: var(--verde-hover);
+}
+
 .elements-styling {
     display: none;
+}
+
+.mensagens {
+    padding-left: 2rem;  
+    padding-top: 1rem;
 }
 
 .error-span {
     color: var(--vermelho);
     font-size: 0.75rem;
-    padding-left: 2rem;
+    display: none;
+}
+
+.valid-email {
+    color: var(--verde);
+    font-size: 0.75rem;
     display: none;
 }
 
@@ -199,7 +215,7 @@ header {
 @media screen and (min-width: 1200px) {
 
     .img-box {
-        margin-top: 2rem;
+        margin-top: 3rem;
     }
     .fundo {
         display: none;
@@ -216,7 +232,7 @@ header {
 
     .container {
         width: 60%;
-        bottom: 10%;
+        bottom: 8%;
     }
 
     .elements-styling {
